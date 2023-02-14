@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59,130,246,0.5);
+  --tw-ring-offset-shadow: 0 0 transparent;
+  --tw-ring-shadow: 0 0 transparent;
+  /* border: 1px solid red; */
+}
+
+*, ::before, ::after{
+  border: 0 solid #e5e7eb;
+}
+
+:root{
+  --white: #fff;
+  --grey: #f0f0f0;
+  --green: #c0dad9;
+  --red: #f2c9c9;
+  --dark-blue: #394066;
+  --light-blue: #c4d7f4;
+  --orange: #fdd5c0;
+  --purple: #dfc6e3;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 25px solid var(--green);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  line-height: 7px;
+  margin: 20px 0;
+  padding: 0 55px;
+}
+
+form{
+  margin: 0 auto;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+form input {
+  border: 1px solid var(--dark-blue);
+  border-radius: 2px;
+  height: 25px;
+  margin: 5px 0 10px;
+  padding: 2px 10px;
+  transition: .3s;
+  width: 200px;
+}
+
+form label{
+  display:block;
+  font-size: 1.2rem;
+}
+
+form div {
+  display: flex;
+  width: 400px;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+form legend{
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+}
+
+.about textarea{
+  width: 417px;
+  height: 136px;
+  padding: 0.5rem;
+  border: 1px solid black;
+  resize: none;
+}
+
+.toggle--closed{
+  background-color: blue;
+}
+
+.form--hidden{
+  display: none;
+}
+
+.preview--results h1{
+  text-align: center;
+}
+
+.preview--results{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-blue);
+}
+
+.personalinfo--results--container{
+  /* border: 1px solid red; */
+  gap: 1rem;
+  padding: 0.5rem;
+  height: 350px;
+  width: 60%;
+  border-bottom: 4px solid var(--red);
+  padding-bottom: 30px;
+}
+
+.personalinfo-first-half{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.9rem;
+}
+
+.personalinfo-first-half div{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+
+.personalinfo--results--container h1{
+  background-color: var(--dark-blue);
+  border-radius: 2px;
+  color: var(--white);
+  margin: 20px 0 30px;
+  padding: 18px;
+  text-align: center;
+}
+
+.about-title{
+  font-size: 1.6rem;
+  margin: 30px 20px 20px;
+  color: var(--dark-blue);
+}
+
+.about-text{
+  margin: 0 20px;
+}
+
+.about-container{
+  /* border: 1px solid red; */
+  margin: 30px 20px 20px;
+}
+
+.additional-skills-container{
+  display: none;
+}
+
+.form select{
+  border: 1px solid var(--dark-blue);
+  border-radius: 2px;
+  height: 25px;
+  margin: 5px 0 10px;
+  padding: 2px 10px;
+  transition: .3s;
+  width: 200px;
+}
+
+fieldset{
+  border: 1px solid var(--dark-blue);
+  display: flex;
+  margin: 10px 0;
+  padding: 15px 40px;
+  gap: 2rem;
+}
+
+.toggle--preview{
+  border: none;
+  border-radius: 2px;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background-color: var(--grey);
+  color: var(--dark-blue);
+  transition: all .3s;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  cursor:pointer;
+}
+
+.toggle--preview:hover{
+  background-color: var(--green);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+
+.hide-subform{
+  position: relative;
+  left: 0;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  height: 40px;
+  margin: 0 10px 0 0;
+  padding: 10px;
+  background-color: var(--grey);
+  color: var(--dark-blue);
+  transition: all .3s;
+}
+
+.personalinfo--title{
+  padding-bottom: 16px solid var(--red);
+}
+
+.additionalskills-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.additionalskills-container button{
+  border-radius: 3px;
+  margin: 5px 0 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.additional-skills-container button:hover{
+  background-color: var(--green);
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}

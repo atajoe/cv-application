@@ -1,0 +1,68 @@
+:root{
+    --white: #fff;
+    --grey: #f0f0f0;
+    --green: #c0dad9;
+    --red: #f2c9c9;
+    --dark-blue: #394066;
+    --light-blue: #c4d7f4;
+    --orange: #fdd5c0;
+    --purple: #dfc6e3;
+  }
+
+.workexperience--results{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.preview--workexperience--heading{
+    font-size: 1.6rem;
+    margin: 30px 30px 20px;
+    color: var(--dark-blue);
+}
+
+.workexperience--results--container{
+    gap: 1rem;
+    padding: 0.5rem;
+    height: 350px;
+    width: 60%;
+    padding-bottom: 30px;
+    border-bottom: 4px solid var(--purple);
+}
+
+.workhistory-list{
+    margin: 0 15px;
+    color: var(--dark-blue);
+}
+
+.workhistory-skills-preview-title{
+    margin: 0 20px 5px;
+    text-transform: capitalize;
+}
+
+.workhistory-skills--preview-date{
+    margin: 0 20px;
+}
+
+.workhistory-skills--preview-task{
+    margin: 10px 20px;
+}
+.workhistory-skills--preview-type{
+    margin: 0 20px 20px;
+    padding-bottom: 10px;
+}
+form select{
+    border: 1px solid var(--dark-blue);
+    border-radius: 2px;
+    height: 25px;
+    margin: 5px 0 10px;
+    padding: 2px 10px;
+    transition: .3s;
+    width: 200px;
+}
+
+.workhistory-colored{
+    color: var(--dark-blue);
+    font-weight: bolder;
+}
